@@ -39,6 +39,7 @@ void buffer_init(long buffer_end);
 #define I_MAP_SLOTS 8
 #define Z_MAP_SLOTS 8
 #define SUPER_MAGIC 0x137F
+#define SUPER_MAGIC2 0x138F
 
 #define NR_OPEN 20
 #define NR_INODE 32
