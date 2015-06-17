@@ -129,7 +129,7 @@ static struct super_block * read_super(int dev)
 	*((struct d_super_block *) s) =
 		*((struct d_super_block *) bh->b_data);
 	brelse(bh);
-	if (s->s_magic != SUPER_MAGIC) {
+	if (s->s_magic != SUPER_MAGIC && s->s_magic != SUPER_MAGIC2) {
 		s->s_dev = 0;
 		free_super(s);
 		return NULL;
